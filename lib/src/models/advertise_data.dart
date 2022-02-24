@@ -24,7 +24,7 @@ class AdvertiseData {
   /// Android only
   ///
   /// Specifies service data UUID
-  final String? serviceDataUuid;
+  final String serviceDataUuid;
 
   /// Android only
   ///
@@ -77,7 +77,7 @@ class AdvertiseData {
       {this.uuid = '',
       this.manufacturerId,
       this.manufacturerData,
-      this.serviceDataUuid,
+      this.serviceDataUuid = '8ebdb2f3-7817-45c9-95c5-c5e9031aaa47',
       this.serviceData,
       this.includeDeviceName = false,
       this.localName,
