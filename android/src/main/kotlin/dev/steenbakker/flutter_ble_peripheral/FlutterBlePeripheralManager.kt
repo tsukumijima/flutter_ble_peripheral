@@ -159,7 +159,7 @@ class FlutterBlePeripheralManager {
         )
 
         // TODO: Add service to advertise
-//        addService(peripheralData)
+        addService(peripheralData)
     }
 
     fun isAdvertising(): Boolean {

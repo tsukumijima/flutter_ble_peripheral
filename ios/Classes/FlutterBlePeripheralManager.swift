@@ -60,10 +60,10 @@ class FlutterBlePeripheralManager : NSObject {
         
         peripheralManager.startAdvertising(dataToBeAdvertised)
         
-//         TODO: Add service to advertise
-//        if peripheralManager.state == .poweredOn {
-//            addService()
-//        }
+        // TODO: Add service to advertise
+        if peripheralManager.state == .poweredOn {
+            addService()
+        }
     }
     
     func stop() {
@@ -116,7 +116,7 @@ extension FlutterBlePeripheralManager: CBPeripheralManagerDelegate {
     func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager) {
         switch peripheral.state {
         case .poweredOn:
-//            addService() TODO: add service
+            addService() // TODO: add service
             state = .idle
         case .poweredOff:
             state = .poweredOff
